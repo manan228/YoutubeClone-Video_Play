@@ -27,7 +27,7 @@ const VideoContainer = () => {
     try {
       const response = await fetch(
         BASE_URL +
-          `/videos?part=snippet%2CcontentDetails%2Cstatistics&maxResults=8&chart=mostPopular&regionCode=IN&pageToken=${
+          `/videos?part=snippet%2CcontentDetails%2Cstatistics&maxResults=8&chart=mostPopular&regionCode=US&pageToken=${
             nextPageToken ?? ""
           }&videoDuration=medium&key=` +
           process.env.REACT_APP_GOOGLE_API_KEY_3
